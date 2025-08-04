@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('/background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-black {
+  background: black;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.btn-google {
+  background: #4285f4;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.toggle-form {
+  text-align: center;
+  margin-top: 15px;
+  user-select: none;
+}
+
+.dashboard {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.transaction-form input,
+.transaction-form select {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+}
