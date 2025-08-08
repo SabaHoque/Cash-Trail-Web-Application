@@ -56,11 +56,6 @@ export default function AuthForm() {
             {isCreating ? 'Already have an account? Login' : 'New user? Create account'}
           </p>
         </form>
-
-        <div className="about-section">
-          <h1>About Cash Trail</h1>
-          <p>Track your income, monitor your expenses, and stay in control of your finances — all in one sleek and secure app.</p>
-        </div>
       </div>
     </div>
   );

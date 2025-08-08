@@ -6,6 +6,7 @@ import Account from "./Components/Auth/Account";
 import Dashboard from "./Components/dashboard/Dashboard";
 import Navbar from "./Components/Navbar";
 import { Chart } from "./Components/chart/chart";
+import Welcome from "./Components/Auth/Welcome";
 import "./index.css";
 
 const ProtectedRoute = ({ children }) => {
@@ -19,7 +20,8 @@ export default function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Account />} />
+           <Route path="/" element={<Welcome />} /> 
+           <Route path="/login" element={<Account />} />
            <Route path="/chart" element={<Chart/>} />
           <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
         </Routes>
