@@ -41,7 +41,16 @@ export default function AuthForm() {
           <input type="password" name="password" placeholder="Password" value={form.password} onChange={handleChange} />
 
           <button type="submit" className="btn-black">{isCreating ? 'Create Account' : 'Login'}</button>
-          <button type="button" className="btn-google">Login with Google</button>
+           <button
+            type="button"
+            className="btn-google"
+            onClick={() => {
+              
+              window.location.href = "https://accounts.google.com/o/oauth2/v2/auth?client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=token&scope=email profile";
+            }}
+          >
+            Login with Google
+          </button>
 
           <p onClick={() => setIsCreating(!isCreating)} className="toggle-form">
             {isCreating ? 'Already have an account? Login' : 'New user? Create account'}
