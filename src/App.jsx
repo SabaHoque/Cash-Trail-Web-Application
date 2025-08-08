@@ -5,6 +5,7 @@ import AuthProvider from "./Components/context/AuthProvider";
 import Account from "./Components/Auth/Account";
 import Dashboard from "./Components/dashboard/Dashboard";
 import Navbar from "./Components/Navbar";
+import { Chart } from "./Components/chart/chart";
 import "./index.css";
 
 const ProtectedRoute = ({ children }) => {
@@ -19,6 +20,7 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Account />} />
+           <Route path="/chart" element={<Chart/>} />
           <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
         </Routes>
       </Router>

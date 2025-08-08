@@ -11,7 +11,8 @@ export default function Dashboard() {
         </select>
         <input type="text" placeholder="Category" />
         <button type="submit">Add Transaction</button>
+        <button type="submit">See Chart</button>
       </form>
     </div>
   );
-}
+} 
