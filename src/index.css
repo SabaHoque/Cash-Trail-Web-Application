@@ -1,70 +1,147 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #000; 
-  color: #fff; 
-  font-family: sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 
 .auth-container {
   max-width: 400px;
+  width: 90%;
   margin: 50px auto;
-  background: #1e1e1e;
-  padding: 20px;
-  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 76, 76, 0.6);
+  color: white;
+  text-align: center;
 }
 
 .auth-form input {
   width: 100%;
-  padding: 10px;
-  margin: 10px 0;
+  padding: 14px;
+  margin: 12px 0;
   border: none;
-  border-radius: 4px;
+  border-radius: 30px;
+  background-color: #2b2b2b;
+  color: white;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form input::placeholder {
+  color: #bbb;
+}
+
+.auth-form input:focus {
+  background-color: #3e3e3e;
+  outline: none;
 }
 
 .btn-black {
-  background: black;
+  background-color: #ff4c4c;
   color: white;
   width: 100%;
-  padding: 10px;
+  padding: 14px;
   border: none;
-  border-radius: 4px;
-  margin-top: 10px;
+  border-radius: 30px;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
   cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 76, 76, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+.btn-black:hover {
+  background-color: #cc3a3a;
 }
 
 .btn-google {
-  background: #4285f4;
+  background-color: #db4437;
   color: white;
   width: 100%;
-  padding: 10px;
+  padding: 14px;
   border: none;
-  border-radius: 4px;
-  margin-top: 10px;
+  border-radius: 30px;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
   cursor: pointer;
+  box-shadow: 0 5px 15px rgba(219, 68, 55, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+.btn-google:hover {
+  background-color: #b33c30;
 }
 
 .toggle-form {
-  text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
   user-select: none;
 }
 
 .dashboard {
   max-width: 600px;
   margin: 40px auto;
-  background: #1e1e1e;
-  padding: 30px;
-  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 76, 76, 0.4);
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .transaction-form input,
 .transaction-form select {
   display: block;
   width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 4px;
+  margin: 12px 0;
+  padding: 14px;
+  border-radius: 30px;
   border: none;
+  background-color: #2b2b2b;
+  color: white;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.transaction-form input::placeholder,
+.transaction-form select {
+  color: #bbb;
+}
+
+.transaction-form input:focus,
+.transaction-form select:focus {
+  background-color: #3e3e3e;
+  outline: none;
+}
+
+.transaction-form button {
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  padding: 14px;
+  width: 100%;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 76, 76, 0.6);
+  margin-top: 15px;
+}
+
+.transaction-form button:hover {
+  background-color: #cc3a3a;
 }

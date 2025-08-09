@@ -1,33 +1,101 @@
 .welcome-container {
-  height: 100vh;
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
 
+/* Hero Section */
+.welcome-hero {
+  max-width: 600px;
+  margin-bottom: 4rem;
+}
+
+.welcome-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
 .highlight {
-  color: #e60000;
+  color: #ff4c4c;
 }
 
 .subtext {
-  font-size: 1.2rem;
-  margin: 10px 0 20px;
-  color: #555;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
 }
 
+/* Login button */
 .login-button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: red;
+  background-color: #ff4c4c;
   color: white;
+  padding: 15px 45px;
+  font-size: 1.1rem;
+  font-weight: 600;
   border: none;
-  border-radius: 8px;
+  border-radius: 30px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 76, 76, 0.5);
 }
 
 .login-button:hover {
-  background-color: darkred;
+  background-color: #cc3a3a;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  gap: 2rem;
+  max-width: 900px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 2rem;
+  flex: 1 1 250px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-box h3 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.feature-box p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 700px) {
+  .welcome-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
