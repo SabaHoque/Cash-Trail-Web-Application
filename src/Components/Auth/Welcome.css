@@ -10,7 +10,7 @@
   text-align: center;
 }
 
-/* Hero Section */
+
 .welcome-hero {
   max-width: 600px;
   margin-bottom: 4rem;
@@ -34,7 +34,7 @@
   line-height: 1.5;
 }
 
-/* Login button */
+
 .login-button {
   background-color: #ff4c4c;
   color: white;
@@ -52,7 +52,7 @@
   background-color: #cc3a3a;
 }
 
-/* Features Section */
+
 .features {
   display: flex;
   gap: 2rem;

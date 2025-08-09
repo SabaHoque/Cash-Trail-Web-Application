@@ -39,7 +39,7 @@ export default function Navbar() {
   return (
     <nav style={navStyle}>
       <Link to="/" style={{ color: "white", textDecoration: "none", fontWeight: "700", fontSize: "1.8rem" }}>
-        Cash Trail
+        💰 Cash Trail
       </Link>
 
       {isAuthenticated ? (
