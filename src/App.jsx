@@ -6,9 +6,7 @@ import Account from "./Components/Auth/Account";
 import Dashboard from "./Components/dashboard/Dashboard";
 import Navbar from "./Components/Navbar";
 import Welcome from "./Components/Auth/Welcome";
-import Income from "./Components/pages/Income";
-import CategorizedTransaction from "./Components/pages/CategorizedTransaction";
-import Chart from "./Components/charts/chart";
+
 
 const ProtectedRoute = ({ children }) => {
   const { isAuthenticated } = useAuth();
@@ -33,30 +31,7 @@ export default function App() {
               </ProtectedRoute>
             }
           />
-          <Route
-            path="/income"
-            element={
-              <ProtectedRoute>
-                <Income />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/categorized-transactions"
-            element={
-              <ProtectedRoute>
-                <CategorizedTransaction />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/chart"
-            element={
-              <ProtectedRoute>
-                <Chart />
-              </ProtectedRoute>
-            }
-          />
+          
         </Routes>
       </Router>
     </AuthProvider>
